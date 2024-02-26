@@ -4,7 +4,7 @@ export  const urlOptions = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MWI5MjBiMDhhNWVhYWM2NDQ5Yzg3ZDc4ODFkZWQ3NiIsInN1YiI6IjY0MDhiYTVlNWUxMjAwMDBiMGYyZjJjMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mKdvRBC-dB5qQ9skQvUl4FqDiy7tQFXC6RdKt_nrnrQ'
+    Authorization: 'Bearer '+process.env.REACT_APP_TMDB_TOKEN
   }
 };
 
@@ -14,5 +14,3 @@ export const bg_img_url = 'https://assets.nflxext.com/ffe/siteui/vlv3/32c47234-8
 
 export const supported_lang = [{id: 'en', name: 'English'},
 {id: 'hindi', name: 'Hindi'}, {id: 'spanish', name: 'Spanish'}];
-
-// export const OPEN_AI_KEY = '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';
